@@ -10,8 +10,10 @@ export class App extends Component {
     return (
       <div>
         <TitleBar title={this.props.title} />
-        <PlayerList players={this.props.players} />
-        <AddPlayer score={10} />
+        <div className="wrapper">
+          <PlayerList players={this.props.players} />
+          <AddPlayer score={10} />
+        </div>
       </div>
     );
   };
